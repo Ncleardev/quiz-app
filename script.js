@@ -57,7 +57,7 @@ function parseQuestions(text) {
             continue;
         }
 
-        const answerMatch = line.match(/^([a-d])[>)]\s*(.*)/i);
+        const answerMatch = line.match(/^([a-z])[>)]\s*(.*)/i);
         if (answerMatch) {
             processingQuestion = false;
             const isCorrect = line[1] === '>';
